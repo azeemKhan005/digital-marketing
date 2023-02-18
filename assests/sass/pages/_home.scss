@@ -1,0 +1,27 @@
+.help {
+  .container {
+    .main {
+      @include flex(spaceBewteen);
+      flex-direction: column;
+
+      a {
+        @include buttons($primaryBtnBg, white, 10px 50px);
+      }
+
+      .description {
+        p {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 26px;
+          color: var(--lightBlack);
+        }
+      }
+
+      .title {
+        color: beige;
+      }
+    }
+  }
+}

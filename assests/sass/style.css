@@ -1,0 +1,66 @@
+:root {
+  --variable-name: black;
+}
+
+.primary-button {
+  display: block;
+  color: var(--lightGreen);
+  background-color: var(--lightYellow);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 25px;
+  font-family: "Rubik", sans-serif;
+}
+
+.menu-icon {
+  display: none;
+}
+@media (max-width: 767px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+.navigation {
+  display: block;
+}
+@media (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .navigation.active {
+    display: block;
+  }
+}
+
+.help .container .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.help .container .main a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 10px 50px;
+  border-radius: 25px;
+}
+.help .container .main .description p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--lightBlack);
+}
+.help .container .main .title {
+  color: beige;
+}/*# sourceMappingURL=style.css.map */

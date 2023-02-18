@@ -1,0 +1,38 @@
+// Function(methods)
+@mixin flex-c {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-c-c {
+  @include flex-c;
+  justify-content: center;
+}
+
+@mixin flex-c-sb {
+  @include flex-c;
+  justify-content: space-between;
+}
+
+// Function with parameter
+@mixin buttons($bg, $color, $padding) {
+  @include flex-c-c();
+  text-align: center;
+  text-decoration: none;
+  background-color: $bg;
+  color: $color;
+  padding: $padding;
+  border-radius: 25px;
+}
+
+// Function with conditions
+@mixin flex($flexProperty) {
+  @include flex-c();
+
+  @if $flexProperty == center {
+    justify-content: center;
+  }
+  @if $flexProperty == spaceBewteen {
+    justify-content: space-between;
+  }
+}
