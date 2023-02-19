@@ -1,4 +1,4 @@
-import "extend/variables";
+@import "extend/variables";
 
 @import "extend/helper";
 
@@ -7,3 +7,13 @@ import "extend/variables";
 @import "layout/header";
 
 @import "pages/home";
+
+@import "extend/basics";
+
+@import "pages/partners";
+
+@import "pages/increaseBussiness";
+
+@import "pages/help";
+
+@import "layout/footer";

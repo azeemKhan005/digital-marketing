@@ -1,27 +1,186 @@
-.help {
+// .help {
+//   .container {
+//     .main {
+//       @include flex(spaceBewteen);
+//       flex-direction: column;
+
+//       a {
+//         @include buttons($primaryBtnBg, white, 10px 50px);
+//       }
+
+//       .description {
+//         p {
+//           font-family: "Rubik";
+//           font-style: normal;
+//           font-weight: 400;
+//           font-size: 22px;
+//           line-height: 26px;
+//           color: var(--lightBlack);
+//         }
+//       }
+
+//       .title {
+//         color: beige;
+//       }
+//     }
+//   }
+// }
+
+/* full-stack-structure start */
+.full-stack-structure {
   .container {
-    .main {
-      @include flex(spaceBewteen);
-      flex-direction: column;
-
-      a {
-        @include buttons($primaryBtnBg, white, 10px 50px);
+    display: flex;
+    padding-top: 100px;
+  }
+}
+main {
+  .full-stack-structure {
+    .container {
+      @media (max-width: 767px) {
+        flex-direction: column;
       }
+    }
+    .sub-headings {
+      @media (max-width: 767px) {
+        padding-top: 30px;
+      }
+      .first-block {
+        display: flex;
+        flex-wrap: wrap;
+        > * {
+          width: 50%;
 
-      .description {
-        p {
-          font-family: "Rubik";
-          font-style: normal;
-          font-weight: 400;
-          font-size: 22px;
-          line-height: 26px;
-          color: var(--lightBlack);
+          @media (max-width: 767px) {
+            padding-top: 20px;
+            padding-left: 0;  
+          }
         }
       }
 
-      .title {
-        color: beige;
+      .second-block {
+        display: flex;
       }
     }
   }
+  .main-heading {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 65px;
+    letter-spacing: 0.02em;
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+  .claims {
+    padding-bottom: 60px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 40px;
+    color: $lightBlack;
+  }
 }
+// ------------
+
+main {
+  .more-info {
+    ul {
+      li {
+        a {
+          color: $Yellow;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 40px;
+          letter-spacing: 0.02em;
+          text-decoration-line: underline;
+          max-width: 20%;
+        }
+        &::after {
+          content: url(../images/Arrow\ -\ Right.png);
+          padding-left: 20px;
+          max-width: 20%;
+        }
+      }
+      list-style-type: none;
+    }
+  }
+  .first-child-heading {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 100px;
+  }
+  .first-heading-info {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding-top: 25px;
+    min-width: 225px;
+  }
+  .second-child-heading {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 90px;
+  }
+  .second-heading-info {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding-top: 25px;
+  }
+  .third-child-heading {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 100px;
+    padding-top: 170px;
+  }
+  .third-heading-info {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding-top: 25px;
+    min-width: 225px;
+  }
+  .fourth-child-heading {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 90px;
+    padding-top: 170px;
+  }
+  .fourth-heading-info {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    padding-top: 25px;
+  }
+}
+.full-stack-structure {
+  .sub-headings {
+    padding-top: 190px;
+  }
+}
+
+/* full-stack-structure end */
+
+/* ------ */

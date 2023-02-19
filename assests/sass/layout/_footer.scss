@@ -1,0 +1,64 @@
+/* footer started */
+footer {
+  .page-footer {
+    padding-top: 150px;
+    .footer-blocks {
+      .lists {
+        display: flex;
+        @media (max-width: 767px) {
+          flex-direction: column;
+        }
+      }
+      .block-one {
+        img {
+          background-color: darkgreen;
+        }
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+  }
+  .block-one {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    max-width: 35%;
+  }
+  .block-two {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    padding-right: 30px;
+    min-width: max-content;
+  }
+  .block-three {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    padding-right: 30px;
+    min-width: max-content;
+  }
+  .block-four {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    min-width: max-content;
+  }
+}
+.copy-right {
+  text-align: center;
+  border-top: 1px solid $lightBlack;
+  padding-top: 20px;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}

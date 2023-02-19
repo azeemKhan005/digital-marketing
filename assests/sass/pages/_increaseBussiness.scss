@@ -1,0 +1,52 @@
+/* increase bussiness */
+
+main {
+  .increase-bussiness {
+    padding-top: 140px;
+    padding-bottom: 180px;
+
+    .markerting-content {
+      display: flex;
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+    }
+    .adds-service {
+      .service-block {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 60px;
+        letter-spacing: 0.02em;
+        padding-bottom: 30px;
+        padding-left: 15px;
+      }
+      padding-left: 85px;
+      .service-content {
+        font-family: "Rubik";
+        font-style: normal;
+        color: var(--lightBlack);
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 40px;
+        padding-bottom: 80px;
+        padding-left: 15px;
+      }
+    }
+  }
+}
+.actions-container {
+  .temporary-btn {
+    padding: 30px 60px;
+    color: rgb(255 255 255);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    background-color: var(--Yellow);
+    border-radius: 30px;
+    text-transform: capitalize;
+  }
+}

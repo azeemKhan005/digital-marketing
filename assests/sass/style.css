@@ -1,11 +1,7 @@
-:root {
-  --variable-name: black;
-}
-
 .primary-button {
   display: block;
-  color: var(--lightGreen);
-  background-color: var(--lightYellow);
+  color: rgb(255, 255, 255);
+  background-color: rgba(237, 255, 129, 0.45);
   text-decoration: none;
   text-transform: uppercase;
   padding: 10px;
@@ -36,31 +32,422 @@
   }
 }
 
-.help .container .main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+/* styling of top banner */
+.top-banner {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+  position: relative;
 }
-.help .container .main a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.top-banner .service p {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 40px;
   text-align: center;
-  text-decoration: none;
-  background-color: green;
-  color: white;
-  padding: 10px 50px;
-  border-radius: 25px;
+  padding-bottom: 70px;
 }
-.help .container .main .description p {
+.top-banner .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+header .page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+header .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+header h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+}
+
+.navigation .nav-list .nav-list-item a {
+  display: block;
+  color: rgb(247, 252, 250);
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+}
+
+.actions-container .secondary-btn {
+  color: rgb(247, 252, 250);
+  background-color: rgba(237, 255, 129, 0.45);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 25px;
+  border-radius: 30px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.content .display-content h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  opacity: 0.8;
+}
+.content .display-content h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 107px;
+  letter-spacing: 0.04em;
+}
+
+/* full-stack-structure start */
+.full-stack-structure .container {
+  display: flex;
+  padding-top: 100px;
+}
+
+@media (max-width: 767px) {
+  main .full-stack-structure .container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  main .full-stack-structure .sub-headings {
+    padding-top: 30px;
+  }
+}
+main .full-stack-structure .sub-headings .first-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .full-stack-structure .sub-headings .first-block > * {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  main .full-stack-structure .sub-headings .first-block > * {
+    padding-top: 20px;
+    padding-left: 0;
+  }
+}
+main .full-stack-structure .sub-headings .second-block {
+  display: flex;
+}
+main .main-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 65px;
+  letter-spacing: 0.02em;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+main .claims {
+  padding-bottom: 60px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  color: #78847d;
+}
+
+main .more-info ul {
+  list-style-type: none;
+}
+main .more-info ul li a {
+  color: rgb(152, 170, 40);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  max-width: 20%;
+}
+main .more-info ul li::after {
+  content: url(../images/Arrow\ -\ Right.png);
+  padding-left: 20px;
+  max-width: 20%;
+}
+main .first-child-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 100px;
+}
+main .first-heading-info {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  padding-top: 25px;
+  min-width: 225px;
+}
+main .second-child-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 90px;
+}
+main .second-heading-info {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  padding-top: 25px;
+}
+main .third-child-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 100px;
+  padding-top: 170px;
+}
+main .third-heading-info {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  padding-top: 25px;
+  min-width: 225px;
+}
+main .fourth-child-heading {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 90px;
+  padding-top: 170px;
+}
+main .fourth-heading-info {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  padding-top: 25px;
+}
+
+.full-stack-structure .sub-headings {
+  padding-top: 190px;
+}
+
+/* full-stack-structure end */
+/* ------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* partners start  */
+.partner {
+  background-color: rgb(247, 252, 250);
+}
+.partner .partner-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 0;
+}
+
+/* sponsers or partners end */
+/* -------- */
+/* increase bussiness */
+main .increase-bussiness {
+  padding-top: 140px;
+  padding-bottom: 180px;
+}
+main .increase-bussiness .markerting-content {
+  display: flex;
+}
+@media (max-width: 767px) {
+  main .increase-bussiness .markerting-content {
+    flex-direction: column;
+  }
+}
+main .increase-bussiness .adds-service {
+  padding-left: 85px;
+}
+main .increase-bussiness .adds-service .service-block {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 60px;
+  letter-spacing: 0.02em;
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+main .increase-bussiness .adds-service .service-content {
+  font-family: "Rubik";
+  font-style: normal;
+  color: var(--lightBlack);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  padding-bottom: 80px;
+  padding-left: 15px;
+}
+
+.actions-container .temporary-btn {
+  padding: 30px 60px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  background-color: var(--Yellow);
+  border-radius: 30px;
+  text-transform: capitalize;
+}
+
+/* help-block start */
+main .help {
+  background-color: #e1ece8;
+}
+main .help .help-heading .head h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 65px;
+  letter-spacing: 0.02em;
+  padding-top: 100px;
+  text-align: center;
+}
+main .help .help-block {
+  display: flex;
+  padding-bottom: 20px;
+}
+main .help .help-block .container ul {
+  display: flex;
+  gap: 200px;
+  list-style-type: none;
+}
+@media (max-width: 767px) {
+  main .help .help-block .container ul {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.help .help-heading .description p {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  color: var(--lightBlack);
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: #78847d;
 }
-.help .container .main .title {
-  color: beige;
+
+p {
+  text-align: center;
+}
+
+/* footer started */
+footer .page-footer {
+  padding-top: 150px;
+}
+footer .page-footer .footer-blocks .lists {
+  display: flex;
+}
+@media (max-width: 767px) {
+  footer .page-footer .footer-blocks .lists {
+    flex-direction: column;
+  }
+}
+footer .page-footer .footer-blocks .block-one img {
+  background-color: darkgreen;
+}
+footer ul {
+  list-style-type: none;
+}
+footer .block-one {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  max-width: 35%;
+}
+footer .block-two {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  padding-right: 30px;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+footer .block-three {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  padding-right: 30px;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+footer .block-four {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.copy-right {
+  text-align: center;
+  border-top: 1px solid #78847d;
+  padding-top: 20px;
+  margin-top: 20px;
+  padding-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */

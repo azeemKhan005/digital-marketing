@@ -1,0 +1,58 @@
+/* help-block start */
+
+main {
+  .help {
+    background-color: $lightGreenCorner;
+    .help-heading {
+      .head {
+        h1 {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 42px;
+          line-height: 65px;
+          letter-spacing: 0.02em;
+          padding-top: 100px;
+          text-align: center;
+        }
+      }
+    }
+    .help-block {
+      display: flex;
+      padding-bottom: 20px;
+
+      .container {
+        ul {
+          display: flex;
+          gap: 200px;
+          list-style-type: none;
+          @media (max-width: 767px) {
+            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+.help {
+  .help-heading {
+    .description {
+      p {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        color: $lightBlack;
+      }
+    }
+  }
+}
+p {
+  text-align: center;
+}
